@@ -4,7 +4,7 @@
 
 #include <mc/atomic.h>
 
-::mc::Atomic<size_t> i = 0;
+::mc::Atomic<size_t> i(0);
 
 void * thread( void * x ) {
   size_t exp = 0; 
